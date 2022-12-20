@@ -1,0 +1,9 @@
+{
+  "name": "lsd-standard",
+  "version": "0.0.1",
+  "description": "Standard for writing modular, scaleable Vue Code",
+  "main": "index.js",
+  "repository": "https://github.com/ldiebold/lsd-standard",
+  "author": "luke@quasarcast.com",
+  "license": "MIT"
+}
