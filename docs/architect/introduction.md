@@ -1,0 +1,2 @@
+# Introduction
+makes larger decisions on the projects structure and abstractions that require a wider understanding of the system. They would, for example, build generators and write code that’s heavily relied upon (and therefore needs to be as right as possible the first time)

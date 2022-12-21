@@ -1,0 +1,28 @@
+{
+  "name": "lsd-standard",
+  "version": "0.0.1",
+  "description": "Standard for writing modular, scaleable Vue Code",
+  "main": "index.js",
+  "repository": "https://github.com/ldiebold/lsd-standard",
+  "author": "luke@quasarcast.com",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "install": "^0.13.0",
+    "vitepress": "^1.0.0-alpha.32",
+    "vue": "^3.2.45"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  }
+}
