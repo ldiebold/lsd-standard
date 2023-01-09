@@ -1,31 +1,34 @@
 # Guide
 
-## Do NOT style the root component of a lower level component
-When building lower level components, it can be tempting to add styling to the root component
+## Do NOT style the root of a leaf component
+When building leaf components, it can be tempting to add styling to the root component
 
 :x:`UsersTable.vue`
 ```vue
 <template>
   <q-table
     :rows="users"
-    flat
-    bordered
-    style="max-width: 650px"
+    flat // ❌
+    bordered // ❌
+    style="max-width: 650px" // ❌
   />
 </template>
 ```
 
 We want to avoid this because it **makes the component inflexible**. We want the **parent** to control the styling.
-This means our lower level components can be used more agnostic.
+This means our leaf components are agnostic, and can be styled depending on their context.
 
-:white_check_mark:`UsersTable.vue`
+Said another way:
+> avoid styling leaf components. That way, leaf components can easily have different styles depending on where they're used.
+
+:white_check_mark: `UsersTable.vue`
 ```vue
 <template>
   <q-table :rows="users" />
 </template>
 ```
 
-:white_check_mark:`ManageUsersView.vue`
+:white_check_mark: `ManageUsersView.vue`
 ```vue
 <template>
   <UsersTable

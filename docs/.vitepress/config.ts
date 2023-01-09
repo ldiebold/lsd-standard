@@ -5,6 +5,7 @@ import { stitcherItems } from './stitcherItems'
 import { orchestratorItems } from './orchestratorItems'
 import { artisanItems } from './artisanItems'
 import { architectItems } from './architectItems'
+import { scoperItems } from './scoperItems'
 
 export default defineConfig({
   title: 'LSD Standard',
@@ -14,7 +15,8 @@ export default defineConfig({
       ...stitcherItems,
       ...orchestratorItems,
       ...artisanItems,
-      ...architectItems
+      ...architectItems,
+      ...scoperItems,
     ]
   }
 })
