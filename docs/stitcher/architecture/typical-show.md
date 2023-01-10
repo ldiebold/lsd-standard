@@ -67,7 +67,7 @@ import PostView from 'modules/Post/PostView/PostView.vue'
   <PostView :post-id="postId" />
 </template>
 ```
-We encourage you to compare this `PostPage` component to the [`PostsPage` component here](typical-examples-index.md#showmodelspagevue). Note that sometimes a page accepts props from the route (like in the example above), and sometimes it does not.
+We encourage you to compare this `PostPage` component to the [`PostsPage` component here](typical-index.md#showmodelspagevue). Note that sometimes a page accepts props from the route (like in the example above), and sometimes it does not.
 
 ## Generating The View
 
